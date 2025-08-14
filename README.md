@@ -125,11 +125,3 @@ Pull requests are welcome! Please fork the repo and submit your changes via a PR
  📄 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-```
-
----
-
-I can also **add usage screenshots and SHAP plots** into the README so it looks more professional on GitHub.  
-Do you want me to make a **version with example images** included? That would make your repo more attractive.
-```
