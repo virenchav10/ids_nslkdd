@@ -1,24 +1,20 @@
 Here’s the **`README.md`** code you can copy directly into your GitHub repo:
 
 ```markdown
-# 🛡️ NSL-KDD Intrusion Detection System
+ 🛡️ NSL-KDD Intrusion Detection System
 
 A machine learning-based Intrusion Detection System (IDS) using the NSL-KDD dataset, implemented with **Random Forest**, **Isolation Forest**, and **Autoencoder** models, along with **SHAP explainability** for model interpretation.
 
----
-
-## 📌 Overview
+ 📌 Overview
 This project builds and evaluates three detection models on the NSL-KDD dataset:
-- **Random Forest** — Supervised learning for multi-class attack classification
-- **Isolation Forest** — Unsupervised anomaly detection
-- **Autoencoder** — Deep learning-based anomaly detection
-- **SHAP** — Explains model predictions feature-by-feature
+- Random Forest — Supervised learning for multi-class attack classification
+- Isolation Forest — Unsupervised anomaly detection
+- Autoencoder — Deep learning-based anomaly detection
+- SHAP — Explains model predictions feature-by-feature
 
 The system is designed to detect various attack categories (`DoS`, `Probe`, `R2L`, `U2R`) and can be extended for real-time intrusion detection.
 
----
-
-## 📂 Project Structure
+ 📂 Project Structure
 ```
 
 .
@@ -31,41 +27,35 @@ The system is designed to detect various attack categories (`DoS`, `Probe`, `R2L
 
 ````
 
----
-
-## ⚙️ Features
+ ⚙️ Features
 ✅ Multi-class attack detection  
 ✅ Supervised & unsupervised learning approaches  
 ✅ Model explainability using SHAP  
 ✅ Data preprocessing with `OneHotEncoder` & `StandardScaler`  
 ✅ Supports both manual data entry & CSV batch predictions  
 
----
+ 📊 Dataset — NSL-KDD
+The NSL-KDD dataset is an improved version of the original KDD’99 dataset, addressing issues of redundancy and imbalance.
 
-## 📊 Dataset — NSL-KDD
-The **NSL-KDD** dataset is an improved version of the original KDD’99 dataset, addressing issues of redundancy and imbalance.
+- Classes: Normal, DoS, Probe, R2L, U2R  
+- Features: 41 features (protocol, service, flag, network stats, etc.)  
+- Source: [NSL-KDD Dataset](https://www.unb.ca/cic/datasets/nsl.html)
 
-- **Classes:** Normal, DoS, Probe, R2L, U2R  
-- **Features:** 41 features (protocol, service, flag, network stats, etc.)  
-- **Source:** [NSL-KDD Dataset](https://www.unb.ca/cic/datasets/nsl.html)
+ 🚀 Installation
 
----
-
-## 🚀 Installation
-
-1️⃣ **Clone the repository**
+1️⃣ Clone the repository
 ```bash
 git clone https://github.com/yourusername/nsl-kdd-ids.git
 cd nsl-kdd-ids
 ````
 
-2️⃣ **Install dependencies**
+2️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3️⃣ **Run the notebook** (for experimentation)
+3️⃣ Run the notebook (for experimentation)
 
 ```bash
 jupyter notebook nslkdd.ipynb
@@ -75,15 +65,13 @@ jupyter notebook nslkdd.ipynb
 
 ```bash
 python ap2.py
+
 ```
+ 📈 Model Training & Evaluation
 
----
-
-## 📈 Model Training & Evaluation
-
-* **Random Forest** — Tuned using `GridSearchCV` for maximum F1-score
-* **Isolation Forest** — Configured for high recall in anomaly detection
-* **Autoencoder** — Dense neural network with reconstruction error thresholding
+Random Forest — Tuned using `GridSearchCV` for maximum F1-score
+Isolation Forest — Configured for high recall in anomaly detection
+Autoencoder — Dense neural network with reconstruction error thresholding
 
 **Metrics Used:**
 
@@ -95,7 +83,7 @@ python ap2.py
 
 ---
 
-## 🧠 Explainability with SHAP
+ 🧠 Explainability with SHAP
 
 SHAP values help visualize how each feature contributes to a prediction:
 
@@ -104,7 +92,7 @@ SHAP values help visualize how each feature contributes to a prediction:
 
 ---
 
-## 📜 Requirements
+ 📜 Requirements
 
 * Python 3.8+
 * pandas, numpy, scikit-learn
@@ -120,7 +108,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🏗 Future Improvements
+ 🏗 Future Improvements
 
 * Real-time intrusion detection integration
 * Dataset augmentation for zero-day attack simulation
@@ -128,13 +116,13 @@ pip install -r requirements.txt
 
 ---
 
-## 🤝 Contributing
+ 🤝 Contributing
 
 Pull requests are welcome! Please fork the repo and submit your changes via a PR.
 
 ---
 
-## 📄 License
+ 📄 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
